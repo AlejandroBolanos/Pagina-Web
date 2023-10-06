@@ -1,0 +1,6 @@
+@import url(vars.css);
+
+
+.menu-container{
+font-family: var(--ff-main);
+}
