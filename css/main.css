@@ -1,6 +1,142 @@
 @import url(vars.css);
 
 
-.menu-container{
-font-family: var(--ff-main);
+.title-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--clr-main);
+    width: 80vw;
+    height: 5ch;
+    margin: auto;
+    text-align: center;
+    font-family: var(--ff-main);
+    font-size: var(--fs-xxbg);
+    border-radius: 2rem 2rem 0rem 0rem;
+    
+}
+
+.menu-container {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;*/
+     display: flex;
+    flex-wrap: wrap; 
+    width: 80vw;
+    margin: auto;
+    background: var(--clr-main-bg);
+    justify-content: center;
+
+}
+
+.btn-translate{
+    display: flex;
+    position: absolute;
+    scale: 60%;
+    bottom: 27rem;
+    left: 60rem;
+
+}
+
+.menu-items {
+    flex-basis: 40%;
+    /* 2 columnas iguales con margen entre ellas */
+    margin: 5.375rem 2.5rem 0rem 2.5rem;
+
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--clr-white);
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.84));
+    border-radius: 12px;
+}
+
+.half {
+    flex: 1;
+    background: inherit;
+    /* Utiliza el fondo de la tarjeta */
+    overflow: hidden;
+    /* Evita que el contenido se desborde */
+    border-radius: 12px 0px 0px 12px;
+    display: flex;
+}
+
+.content-img {
+    display: flex;
+    position: relative;
+}
+
+.img-menu {
+    display: block;
+    width: 100%;
+    border-radius: 12px 0px 0px 12px;
+}
+
+.star-btn {
+    position: absolute;
+    background: var(--clr-white);
+    border: none;
+    border-radius: .5rem;
+    top: -1rem;
+    right: 8.5rem;
+    scale: 50%;
+}
+
+.content-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 13px;
+    /* Espacio interno dentro de cada mitad */
+    /* Estilos adicionales para el contenido de cada mitad */
+
+}
+
+.name-dish{
+    text-align: center;
+    margin: auto;
+    font-size: var(--fs-md);
+    font-family: var(--ff-tertiary);
+    font-weight: var(--fw-md);
+}
+
+.cart-btn{
+   position: absolute; 
+    /* background: var(--clr-main); */
+    border: .5rem solid var(--clr-main);
+    border-radius: 2rem;
+    top: -13rem;
+    right: -27.5rem;
+    scale: 6%;
+    background: var(--clr-main);
+    
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        display: block;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background: var(--clr-white);
+        min-height: 300px;
+        position: relative;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center center;
+        filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.84));
+        border-radius: 12px;
+    }
+    
+    .menu-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+
 }
