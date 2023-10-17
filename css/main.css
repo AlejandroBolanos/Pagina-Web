@@ -3,9 +3,9 @@
 
 .header-menu-container{
     display: grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns:1fr 2fr 1fr;
     background: var(--clr-main);
-    width: 80vw;
+    width: 90vw;
     height: 25ch;
     margin: auto;
     border-radius: 2rem 2rem 0rem 0rem;
@@ -18,13 +18,14 @@
     text-align: center;
     margin: auto;
     font-family: var(--ff-main);
-    font-size: var(--fs-xxbg);
+    font-size: var(--fs-xxbg); 
+    
 }
 
 .menu-container {
     display: flex;
     flex-wrap: wrap;
-    width: 80vw;
+    width: 90vw;
     margin: auto;
     background: var(--clr-main-bg);
     justify-content: center;
@@ -36,15 +37,15 @@
 .btn-translate {
     display: flex;
     position: absolute;
-    margin-left: 12rem;
+    margin-left: 6rem;
     margin-top: 2rem;
 }
 
 .btn-back-arrow {
     display: flex;
     position: absolute;
-    background: var(--clr-main);
     margin-left: 2rem;
+
 }
 
 .menu-items {
@@ -96,14 +97,14 @@
     background: var(--clr-white);
     border: none;
     border-radius: .5rem;
-    top: -1rem;
-    right: 8.5rem;
-    scale: 50%;
+    margin-bottom: 14rem;
+    margin-right: 8.5rem;
 }
 
 .content-text {
     display: flex;
-    flex-wrap: wrap;
+    position: relative;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     padding: 13px;
     /* Espacio interno dentro de cada mitad */
@@ -117,13 +118,13 @@
     font-weight: var(--fw-md);
 }
 
-.cart-btn{
-    position: absolute;
+.cart-btn {
+    position: absolute; 
     border: .5rem solid var(--clr-main);
     border-radius: .5rem;
-    background: var(--clr-main);
-    margin-left: 130px;
-    margin-top: -3rem;
+    background:var(--clr-main) ;
+    margin-left: 10rem;
+    margin-top: 14rem;
 }
 
 /* Login */
@@ -230,21 +231,16 @@
 @media (max-width: 768px) {
     .card {
         display: block;
-        flex-wrap: wrap;
-        flex-direction: column;
-        background: var(--clr-white);
-        min-height: 300px;
-        position: relative;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center center;
-        filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.84));
-        border-radius: 12px;
     }
 
     .menu-container {
         display: grid;
         grid-template-columns: 1fr;
+    }
+    
+    .cart-btn{
+    margin-left: 11rem;
+    margin-top: 11rem;
     }
 
     /* Login signUp and payment  */
@@ -261,5 +257,18 @@
     width: 40vw;
     }
     
+    .btn-back-arrow {
+        margin-left: 0rem;
+        margin-top: -1rem;
+        scale: 60%;
+    }
+
+    .btn-translate {
+        display: flex;
+        position: absolute;
+        margin-left: -3rem;
+        margin-top: 0rem;
+        scale: 60%;
+    }
 
 }
