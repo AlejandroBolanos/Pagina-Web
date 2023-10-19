@@ -137,16 +137,8 @@ main {
   width: 270px;
   padding: 1rem 0;
   text-align: center;
-}
-
-.menu-container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 5rem;
+  margin: 5rem 0;
+  box-shadow: 1px 0px 20px -6px var(--clr-black);
 }
 
 .categories-container {
@@ -162,7 +154,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   width: 260px;
   height: 380px;
@@ -266,7 +258,7 @@ main {
 
 .table-title {
   border-radius: 2rem 2rem 0 0;
-  margin: 0;
+  margin: 2rem 0 0;
 }
 
 .order-table {
@@ -304,6 +296,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 10rem;
 }
 
 .footer-icons {
