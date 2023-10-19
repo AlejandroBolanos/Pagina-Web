@@ -1,7 +1,7 @@
 :root{
 
     --ff-main:'Playfair Display', medium,italic;
-    --ff-secondary:'DM Sans';
+    --ff-secondary:'DM Sans',medium;
     --ff-tertiary: 'DM Sans', bold;
 
     /*font size*/

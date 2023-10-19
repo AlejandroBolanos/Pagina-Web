@@ -1,7 +1,7 @@
 @import url(vars.css);
 
 
-.header-menu-container{
+.header-menu{
     display: grid;
     grid-template-columns:1fr 2fr 1fr;
     background: var(--clr-main);
@@ -22,7 +22,7 @@
     
 }
 
-.menu-container {
+.container-menu {
     display: flex;
     flex-wrap: wrap;
     width: 90vw;
@@ -31,8 +31,6 @@
     justify-content: center;
     border-radius: 0 0 2rem 2rem
 }
-
-
 
 .btn-translate {
     display: flex;
@@ -109,6 +107,9 @@
     padding: 13px;
     /* Espacio interno dentro de cada mitad */
 }
+p{
+font-size: 1.2rem;
+}
 
 .name-dish {
     text-align: center;
@@ -124,10 +125,16 @@
     border-radius: .5rem;
     background:var(--clr-main) ;
     margin-left: 10rem;
-    margin-top: 14rem;
+    margin-top: 14.5rem;
 }
 
 /* Login */
+
+.btn-arrow-login{
+    display: flex;
+    /* position: absolute;  */
+    scale: 60%;
+}
 
 .form-container {
     margin-top: 1.5rem;
@@ -139,7 +146,7 @@
 }
 
 
-.login-container {
+.container-login {
     display: flex;
     flex-wrap: wrap;
     width: 45vw;
@@ -151,7 +158,7 @@
     border: solid 5px var(--clr-main);
 }
 
-.title-login {
+.container-title-login {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,6 +171,7 @@
     font-size: var(--fs-xbg);
     border-radius: 2rem 2rem 0rem 0rem;
     border: solid 5px var(--clr-main);
+    
 }
 
 /* Estilo para etiquetas de formulario */
@@ -189,7 +197,6 @@
 .login-container-button {
     padding: .5rem 1.5rem;
     background:var(--clr-main);
-    color: #fff;
     border: none;
     border-radius: 15px;
     cursor: pointer;
@@ -233,24 +240,24 @@
         display: block;
     }
 
-    .menu-container {
+    .container-menu {
         display: grid;
         grid-template-columns: 1fr;
     }
     
     .cart-btn{
     margin-left: 11rem;
-    margin-top: 11rem;
+    margin-top: 13.5rem;
     }
 
     /* Login signUp and payment  */
-    .login-container {
+    .container-login {
         width: 65vw;
     }
     
-    .title-login {
+    .container-title-login {
         width: 65vw;
-        font-size: var(--fs-bg);
+        font-size: var(--fs-md);
     }
 
     .form-input{
@@ -258,17 +265,18 @@
     }
     
     .btn-back-arrow {
-        margin-left: 0rem;
+        margin-left: -1rem;
         margin-top: -1rem;
-        scale: 60%;
+        scale: 40%;
+    }
+    .btn-arrow-login {
+        scale: 30%;
     }
 
     .btn-translate {
-        display: flex;
-        position: absolute;
-        margin-left: -3rem;
+        margin-left: -2rem;
         margin-top: 0rem;
-        scale: 60%;
+        scale: 40%;
     }
 
 }
