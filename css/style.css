@@ -272,23 +272,28 @@ main {
 .order-table {
   width: 80%;
   background-color: var(--clr-main);
-  border-radius: 3rem;
-  padding: 1rem;
-
+  border-radius: 2rem;
+  padding: 0 1rem;
+  border-spacing: 0 2rem;
 }
 
 .order-table td {
   background-color: var(--clr-main-bg);
   text-align: center;
-
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bk);
+  font-size: var(--fs-lg);
+  
 }
 
-.first-td{
-  border-radius: 3rem 0 0 3rem;
+.first-td {
+  border-radius: 1rem 0 0 1rem;
 }
 
-.third-td{
-  border-radius: 0 3rem 3rem 0;
+.third-td {
+  display: flex;
+  justify-content: center;
+  border-radius: 0 1rem 1rem 0;
 }
 
 @media (max-width: 768px) {
