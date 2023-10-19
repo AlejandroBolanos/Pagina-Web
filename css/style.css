@@ -6,6 +6,8 @@ body {
   font-family: var(--ff-main);
 }
 
+/*header*/
+
 #header-container {
   display: flex;
   background-color: var(--clr-main);
@@ -120,6 +122,21 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+/*menu section*/
+
+.secondary-title {
+  background-color: var(--clr-main);
+  border-radius: 2rem;
+  font-weight: var(--fw-rg);
+  color: var(--clr-white);
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-lg);
+  width: 270px;
+  padding: 0.5rem 0;
+  text-align: center;
 }
 
 .menu-container {
@@ -130,16 +147,6 @@ main {
   justify-content: center;
   width: 100%;
   gap: 5rem;
-}
-
-.menu-title {
-  background-color: var(--clr-main);
-  padding: 0.5rem 4rem;
-  border-radius: 2rem;
-  font-weight: var(--fw-rg);
-  color: var(--clr-white);
-  font-family: var(--ff-secondary);
-  font-size: var(--fs-lg);
 }
 
 .categories-container {
@@ -183,6 +190,105 @@ main {
   font-family: var(--ff-secondary);
   font-size: var(--fs-md);
   box-shadow: 1px 0px 20px -6px var(--clr-black);
+}
+
+/*recommended section*/
+
+.recommended-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 80%;
+  background: var(--clr-main-bg);
+  justify-content: center;
+  border-radius: 0 0 2rem 2rem;
+}
+
+/*estos ya estannnnn*/
+.content-text {
+  display: flex;
+  position: relative;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  padding: 13px;
+  /* Espacio interno dentro de cada mitad */
+}
+
+.half {
+  flex: 1;
+  background: inherit;
+  /* Utiliza el fondo de la tarjeta */
+  overflow: hidden;
+  /* Evita que el contenido se desborde */
+  border-radius: 12px 0px 0px 12px;
+  margin: 2rem 0.5rem;
+  display: flex;
+}
+.menu-items {
+  flex-basis: 40%;
+  /* 2 columnas iguales con margen entre ellas */
+  margin: 0rem 2.5rem 5.375rem 2.5rem;
+}
+.content-img {
+  display: flex;
+  position: relative;
+}
+
+.img-menu {
+  display: block;
+  width: 100%;
+  border-radius: 12px 0px 0px 12px;
+}
+
+.star-btn {
+  position: absolute;
+  background: var(--clr-white);
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 14rem;
+  margin-right: 8.5rem;
+}
+
+.name-dish {
+  text-align: center;
+  margin: auto;
+  font-size: var(--fs-md);
+  font-family: var(--ff-tertiary);
+  font-weight: var(--fw-md);
+}
+
+.cart-btn {
+  border: 0.5rem solid var(--clr-main);
+  border-radius: 0.5rem;
+  background: var(--clr-main);
+}
+
+/*order section*/
+
+.table-title {
+  border-radius: 2rem 2rem 0 0;
+  margin: 0;
+}
+
+.order-table {
+  width: 80%;
+  background-color: var(--clr-main);
+  border-radius: 3rem;
+  padding: 1rem;
+
+}
+
+.order-table td {
+  background-color: var(--clr-main-bg);
+  text-align: center;
+
+}
+
+.first-td{
+  border-radius: 3rem 0 0 3rem;
+}
+
+.third-td{
+  border-radius: 0 3rem 3rem 0;
 }
 
 @media (max-width: 768px) {
