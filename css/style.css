@@ -283,7 +283,6 @@ main {
   font-family: var(--ff-secondary);
   font-weight: var(--fw-bk);
   font-size: var(--fs-lg);
-  
 }
 
 .first-td {
@@ -296,8 +295,41 @@ main {
   border-radius: 0 1rem 1rem 0;
 }
 
+/*footer section*/
 
+footer {
+  background-color: var(--clr-footer-bg);
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.footer-icons {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-credits {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  margin-bottom: 2rem;
+  color: var(--clr-white);
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-nm);
+}
+.footer-politics {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  color: var(--clr-white);
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-md);
+}
 
 @media (max-width: 768px) {
   .header-right {
