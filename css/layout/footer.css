@@ -51,6 +51,8 @@ footer {
   }
 
   .footer-icons {
-    gap: 0.5rem;
+    gap: 1rem;
+    flex-direction: column;
+
   }
 }

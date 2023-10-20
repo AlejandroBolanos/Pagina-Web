@@ -44,11 +44,12 @@
   display: flex;
   position: absolute;
   margin-left: 2rem;
+  margin-top: 2rem;
 }
 
 .star-btn {
   position: absolute;
-  background:hsla(129, 0%, 84%, 0.7);
+  background: hsla(129, 0%, 84%, 0.7);
   border: none;
   border-radius: 0.5rem;
   margin-bottom: 14rem;
@@ -59,7 +60,8 @@
   border: 0.5rem solid var(--clr-main);
   border-radius: 0.5rem;
   background: var(--clr-main);
-  width: 40%;
+  width: 35%;
+  align-self: center;
 }
 
 .login-container-button {
@@ -94,19 +96,21 @@
 
 .btn-arrow-login {
   display: flex;
-  /* position: absolute;  */
-  scale: 60%;
+  height: 90%;
+  align-self: flex-start;
+  flex: 0;
+  margin: 0.3rem 1rem;
 }
 
 @media (max-width: 768px) {
-
   .btn-back-arrow {
     margin-left: -1rem;
     margin-top: -1rem;
     scale: 40%;
   }
+
   .btn-arrow-login {
-    scale: 30%;
+    scale: 80%;
   }
 
   .btn-translate {

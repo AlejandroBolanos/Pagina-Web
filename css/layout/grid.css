@@ -89,9 +89,15 @@
 }
 
 .menu-items {
-  flex-basis: 40%;
+  flex-basis: 44%;
   /* 2 columnas iguales con margen entre ellas */
   margin: 0rem 2.5rem 5.375rem 2.5rem;
+}
+
+.down-content {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .top-border {
@@ -147,19 +153,24 @@
 .container-title-login {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background: var(--clr-main);
   width: 70%;
   height: 3ch;
   margin: auto;
   text-align: center;
   font-family: var(--ff-main);
-  font-size: clamp(var(--fs-md),5vw,var(--fs-xxbg));
+  font-size: clamp(var(--fs-md), 5vw, var(--fs-xxbg));
   border-radius: 2rem 2rem 0rem 0rem;
   border: solid 5px var(--clr-main);
 }
 
-.container-input{
+.container-title-login h3{
+ flex: 1;
+ margin-right: 7rem;
+}
+
+.container-input {
   display: flex;
   width: 85%;
 }
@@ -184,11 +195,11 @@
   border: solid 5px var(--clr-main);
 }
 
-.container-btns-title{
-width: 75%;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+.container-btns-title {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
@@ -217,8 +228,8 @@ justify-content: space-between;
     grid-template-columns: 1fr;
   }
 
-  .form-container{
-  width: 80%;
+  .form-container {
+    width: 80%;
   }
 
   .container-login {
@@ -226,6 +237,12 @@ justify-content: space-between;
   }
 
   .container-title-login {
+    justify-content: space-evenly;
     width: 80%;
   }
+
+  .container-title-login h3{
+    margin-right: 3.5rem;
+   }
+   
 }

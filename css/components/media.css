@@ -9,6 +9,7 @@
 .content-img {
   display: flex;
   position: relative;
+  text-align: center;
 }
 
 .img-menu {

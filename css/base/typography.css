@@ -70,6 +70,7 @@
   /* flex-wrap: wrap; */
   flex-direction: column;
   padding: 13px;
+  text-align: center;
   /* Espacio interno dentro de cada mitad */
 }
 p {
