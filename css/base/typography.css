@@ -55,12 +55,12 @@
 }
 
 .title-menu {
-  display: flex;
-  align-items: center;
+   display: flex;
+  /* align-items: center;
+  margin: auto; */
   justify-content: center;
   text-align: center;
-  margin: auto;
-  font-family: var(--ff-main);
+  font-family: var(--ff-main); 
   font-size: var(--fs-xxbg);
 }
 
