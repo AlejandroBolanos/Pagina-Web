@@ -23,6 +23,7 @@
   text-align: center;
   margin: 5rem 0;
   box-shadow: 1px 0px 20px -6px var(--clr-black);
+  border: none;
 }
 
 .category-title {

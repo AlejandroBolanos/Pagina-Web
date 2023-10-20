@@ -14,6 +14,7 @@
 }
 
 .form-container {
+  width: 50%;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   display: flex;
@@ -22,17 +23,7 @@
   align-items: center;
 }
 
-.container-login {
-  display: flex;
-  flex-wrap: wrap;
-  width: 45vw;
-  margin: auto;
-  background: var(--clr-main-bg);
-  justify-content: center;
-  border-radius: 0 0 2rem 2rem;
-  font-family: var(--ff-tertiary);
-  border: solid 5px var(--clr-main);
-}
+
 
 .form-input {
   width: 100%;
@@ -75,10 +66,6 @@
 @media (max-width: 768px) {
   .dish {
     width: 70%;
-  }
-
-  .container-login {
-    width: 65vw;
   }
 
  

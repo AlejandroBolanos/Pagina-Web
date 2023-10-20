@@ -19,6 +19,7 @@
   font-style: italic;
   padding: 0 2rem;
   background-clip: padding-box;
+  color: var(--clr-white);
 }
 
 .category-btn {
@@ -29,6 +30,7 @@
   font-family: var(--ff-secondary);
   font-size: var(--fs-md);
   box-shadow: 1px 0px 20px -6px var(--clr-black);
+  border: none;
 }
 
 .btn-translate {
@@ -54,12 +56,10 @@
 }
 
 .cart-btn {
-  position: absolute;
   border: 0.5rem solid var(--clr-main);
   border-radius: 0.5rem;
   background: var(--clr-main);
-  margin-left: 10rem;
-  margin-top: 14.5rem;
+  width: 40%;
 }
 
 .login-container-button {
@@ -88,6 +88,7 @@
   cursor: pointer;
   margin-bottom: 2rem;
   margin-top: 1rem;
+  font-weight: var(--fw-bk);
 }
 /* Login */
 
@@ -98,10 +99,6 @@
 }
 
 @media (max-width: 768px) {
-  .cart-btn {
-    margin-left: 11rem;
-    margin-top: 13.5rem;
-  }
 
   .btn-back-arrow {
     margin-left: -1rem;
