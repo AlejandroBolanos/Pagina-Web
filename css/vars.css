@@ -29,4 +29,5 @@
   --clr-white: hsla(0, 0%, 100%, 1);
   --clr-black: hsla(0, 0%, 0%, 1);
   --clr-footer-bg: hsla(0, 0%, 20%, 1); /*333333*/
+  --clr-footer: hsla(0, 0%, 100%, 0.5);
 }
